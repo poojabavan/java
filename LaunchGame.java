@@ -168,9 +168,13 @@ public  class LaunchGame
 {
 	public static void main(String[] args)
 	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your name");
+		String uname = scan.nextLine();
+		
 		TicTacToe t = new TicTacToe();
 
-		HumanPlayer p1 = new HumanPlayer("Pooja",'X');
+		HumanPlayer p1 = new HumanPlayer(uname,'X');
 		AIPlayer p2 = new AIPlayer("AI",'O');
 		
 		Player cp;
